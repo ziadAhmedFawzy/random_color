@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random color</title>
+    <style>
+        * {
+            font-family: 'cairo';
+        }
+        body {
+            color: #875496;
+            text-align: center;
+            background-color: #eee;
+        }
+        header {
+            margin-top: 200px;
+        }
+        header h1 {
+            text-align: center;
+            font-size: 50px;
+            color: #222;
+        }
+        .colorName {
+            margin: 20px auto;
+            background-color: #222;
+            color: #fff;
+            width: 50%;
+            padding: 10px;
+            font-size: 30px;
+            letter-spacing: 6px;
+            border-radius: 20px;
+            font-family: monospace;
+        } 
+        button {
+            all: unset;
+        }
+        button {
+            color: #222;
+            border: 1px solid #222;
+            padding: 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        @media screen and (max-width : 330px) {
+            .colorName {
+                font-size: 15px;
+            }
+        }
+        @media screen and (max-width : 230px) {
+            header h1 {
+                font-size: 20px;
+            }
+            .colorName {
+                font-size: 10px;
+            }
+            button {
+                padding: 10px;
+                font-size: 10px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>random colors</h1></header>
+    <div id="colorName" class="colorName">#eee</div>
+    <button id="changeColor">change color</button>
+    <script src="script.js"></script>
+</body>
+</html>
